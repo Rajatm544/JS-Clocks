@@ -1,0 +1,101 @@
+body {
+    // background-color: rgb(255, 234, 234);
+    background-color: rgb(156, 97, 126);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    color: rgb(255, 234, 234);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+
+.gradient-circle {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    top: 100px;
+    z-index: -2;
+    background: conic-gradient(#FF9AA2 30deg,
+            #FFB7B2 30deg 60deg,
+            #FFDAC1 60deg 90deg,
+            #E2F0CB 90deg 120deg,
+            #B5EAD7 120deg 150deg,
+            #C7CEEA 150deg 180deg,
+            #98FFA3 180deg 210deg,
+            #EBFFB9 210deg 240deg,
+            #FFCDA2 240deg 270deg,
+            #EAACFF 270deg 300deg,
+            #CDB4FF 300deg 330deg,
+            #E2F0CB 330deg 360deg);
+    position: absolute;
+
+}
+
+.analog-clock {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    top: 110px;
+    z-index: -1;
+    position: absolute;
+    background: rgb(218, 0, 29);
+
+    .dial {
+        position: absolute;
+        left: 50%;
+        width: 150px;
+        height: 150px;
+        transform-origin: bottom left;
+
+        &.seconds {
+            width: 130px;
+            height: 130px;
+            top: 20px;
+            left: 153px;
+            z-index: 2;
+            border-left: solid 2px rgb(255, 255, 255);
+        }
+
+        &.minutes {
+            width: 110px;
+            height: 110px;
+            top: 43px;
+            z-index: 4;
+            border-left: solid 4px rgb(161, 159, 255);
+        }
+
+        &.hours {
+            width: 90px;
+            height: 90px;
+            top: 60px;
+            left: 150px;
+            z-index: 4;
+            border-left: solid 4px #FFFE6F;
+        }
+
+        &.dot {
+            border-radius: 50%;
+            border: solid 5px rgb(255, 234, 234);
+            width: 2px;
+            height: 2px;
+            top: 145px;
+            z-index: 10;
+            left: 145px;
+        }
+    }
+}

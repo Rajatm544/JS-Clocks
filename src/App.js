@@ -1,12 +1,7 @@
 import React from "react";
-// import "./App.css";
+import Clock from "./components/Clock";
+import "./App.scss";
 
-function App() {
-    return (
-        <div>
-            <h1>App</h1>
-        </div>
-    );
-}
+const App = () => <Clock />;
 
 export default App;
