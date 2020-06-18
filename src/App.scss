@@ -30,20 +30,21 @@ h1 {
     border-radius: 50%;
     top: 100px;
     z-index: -2;
-    background: conic-gradient(#FF9AA2 30deg,
-            #FFB7B2 30deg 60deg,
-            #FFDAC1 60deg 90deg,
-            #E2F0CB 90deg 120deg,
-            #B5EAD7 120deg 150deg,
-            #C7CEEA 150deg 180deg,
-            #98FFA3 180deg 210deg,
-            #EBFFB9 210deg 240deg,
-            #FFCDA2 240deg 270deg,
-            #EAACFF 270deg 300deg,
-            #CDB4FF 300deg 330deg,
-            #E2F0CB 330deg 360deg);
+    background: conic-gradient(
+        #ff9aa2 30deg,
+        #ffb7b2 30deg 60deg,
+        #ffdac1 60deg 90deg,
+        #e2f0cb 90deg 120deg,
+        #b5ead7 120deg 150deg,
+        #c7ceea 150deg 180deg,
+        #98ffa3 180deg 210deg,
+        #ebffb9 210deg 240deg,
+        #ffcda2 240deg 270deg,
+        #eaacff 270deg 300deg,
+        #cdb4ff 300deg 330deg,
+        #e2f0cb 330deg 360deg
+    );
     position: absolute;
-
 }
 
 .analog-clock {
@@ -85,7 +86,7 @@ h1 {
             top: 60px;
             left: 150px;
             z-index: 4;
-            border-left: solid 4px #98FFA3;
+            border-left: solid 4px #98ffa3;
         }
 
         &.dot {
@@ -98,4 +99,10 @@ h1 {
             left: 145px;
         }
     }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }

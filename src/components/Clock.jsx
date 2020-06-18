@@ -62,16 +62,27 @@ class Home extends Component {
         };
         return (
             <div>
-                <h1>{digiClock}</h1>
-                <div className="container">
-                    <div className="gradient-circle"></div>
-                    <div className="analog-clock">
-                        <div className="dial seconds" style={secondsStyle} />
-                        <div className="dial minutes" style={minutesStyle} />
-                        <div className="dial hours" style={hoursStyle} />
-                        <div className="dial dot" />
+                <div>
+                    <h1>{digiClock}</h1>
+                    <div className="container">
+                        <div className="gradient-circle"></div>
+                        <div className="analog-clock">
+                            <div
+                                className="dial seconds"
+                                style={secondsStyle}
+                            />
+                            <div
+                                className="dial minutes"
+                                style={minutesStyle}
+                            />
+                            <div className="dial hours" style={hoursStyle} />
+                            <div className="dial dot" />
+                        </div>
                     </div>
                 </div>
+                <footer className="footer">
+                    By <a href="https://github.com/Rajatm544">Rajat M</a>
+                </footer>
             </div>
         );
     }
