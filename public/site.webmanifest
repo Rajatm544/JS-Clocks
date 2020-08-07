@@ -1,15 +1,20 @@
 {
     "name": "Analog and Digital Clocks",
     "short_name": "Clocks",
-    "icons": [{
-        "src": "/android-chrome-192x192.png",
-        "sizes": "192x192",
-        "type": "image/png"
-    }, {
-        "src": "/android-chrome-512x512.png",
-        "sizes": "512x512",
-        "type": "image/png"
-    }],
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
     "theme_color": "rgb(218, 0, 29)",
     "orientation": "portrait",
     "background_color": "rgb(156, 97, 126)",

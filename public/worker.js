@@ -1,4 +1,4 @@
-const cacheName = "v4";
+const cacheName = "v5";
 var urlsToCache = ["/"];
 
 // Install a service worker
